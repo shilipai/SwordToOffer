@@ -12,13 +12,13 @@ public class Issue9 {
         if (n < 2) {
             return result[n];
         }
-        int fibNOne = 0;
-        int fibNTwo = 1;
+        int fibNMinusOne = 1;
+        int fibNMinusTwo = 0;
         int fibN = 0;
         for (int i = 2; i <= n; i++) {
-            fibN = fibNOne + fibNTwo;
-            fibNOne = fibNTwo;
-            fibNTwo = fibN;
+            fibN = fibNMinusOne + fibNMinusTwo;
+            fibNMinusTwo = fibNMinusOne;
+            fibNMinusOne = fibN;
         }
         return fibN;
     }
