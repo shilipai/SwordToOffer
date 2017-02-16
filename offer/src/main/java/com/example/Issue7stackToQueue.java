@@ -9,8 +9,8 @@ import java.util.Stack;
  */
 
 public class Issue7stackToQueue<E> {
-    Stack<E> mStack1 = new Stack();
-    Stack<E> mStack2 = new Stack();
+    Stack<E> mStack1 = new Stack<>();
+    Stack<E> mStack2 = new Stack<>();
 
     E deleteHead() {// pop()
         E head;
